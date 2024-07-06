@@ -107,9 +107,9 @@ body.dark{
 }
 
 .fixed_image2{
-    background: url('../../images/abc_trek_images/gp_main.jpg') no-repeat;
+    background: url('../../images/abc_trek_images/gp_main.jpg');
     margin: 0px 10px;
-    height: 400px;
+    height: 500px;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
