@@ -1,0 +1,330 @@
+/* Css for theme buttons */
+
+.theme_icon:hover{
+    transform: scale(1.1);
+    transition: all var(--transition_delay);
+}
+
+.theme_icon_cont{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10000;
+}
+
+body{
+    --background_color: white;
+    --text_color: black;
+    --transition_delay: 0.3s;
+    --heading_color:rgb(131, 4, 64);
+    --header_footer_bc: rgb(249, 242, 249);
+    --links_color: rgb(118, 117, 117);
+    --link_hover_color: var(--heading_color);
+    --hr_color: #333;
+    --shadow_color: rgba(7, 0, 0, 0.66);
+    --border_col: black;
+
+    background-color: var(--background_color);
+    color: var(--text_color);
+}
+
+/* -------------------------------    Css for dark mode   ------------------------------- */
+
+
+
+body.dark{
+    --background_color: #121212;
+    --text_color: #FFFFFF;
+    --heading_color:#1E90FF;
+    --header_footer_bc: #333333;
+    --hr_color: white;
+    --shadow_color: rgba(136, 136, 136, 0.196);
+    --border_col: white;
+}
+
+/* Css for header part */
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--heading_color);
+    background-color: var(--header_footer_bc);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header h1{
+    font-family: "LXGW WenKai Mono TC", monospace;;
+    font-optical-sizing: auto;
+    font-weight: 200px;
+    font-style: normal;
+    font-style: normal;
+    font-size: 1.5em;
+    margin: 12px;
+    max-width: 75%;
+}
+
+
+.cool-hr {
+    width: 80%; /* Set the width of the horizontal rule */
+    margin: 0 auto; /* Center the horizontal rule horizontally */
+    border: none; /* Remove default border */
+    height: 0.5px; /* Adjust the height of the horizontal rule */
+    background-color: var(--hr_color); /* Choose your desired color */
+    left: 10%; /* Adjust the left position to center it horizontally */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: sticky;
+}
+
+
+/* Css for abc Introduction */
+
+.abc_intro{
+    margin: 30px 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Alegreya", serif;;
+}
+
+
+
+/* Css for fixed images */
+
+.fixed_image1{
+    background-image: url('../../images/abc_trek_images/cover_image\(1\).jpg');
+    margin: 0px 10px;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fixed_image2{
+    background: url('../../images/abc_trek_images/gp_main.jpg') no-repeat;
+    margin: 0px 10px;
+    height: fit-content;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.alt_fxd_img{
+    margin: 0px 10px;
+    display: none;
+}
+
+.alt_fxd_img img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* Css for blog description */
+
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 90px;
+    font-family: "Alegreya", serif;
+    gap: 5%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.img_container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: cursive;
+    font-style: italic;
+    margin: 20px 0px;
+}
+
+.img_container img {
+    width: 100%;
+    height: auto;
+    border: 0.5px solid var(--border_col);
+    box-shadow: 0 0px 4px var(--shadow_color);
+}
+
+.img_container:hover{
+    transform: scale(1.05);
+    transition: transform var(--transition_delay) ease-out;
+}
+
+
+
+/* Css for image gallery */
+
+.gallery_container{
+    margin: 0px;
+    width: 80%;
+    margin: auto;
+    padding: 0px;
+}
+
+.gallery_title{
+    margin-bottom: 2rem;
+    font-family: cursive;
+    font-style: italic;
+}
+
+.photo_gallery{
+    display: flex;
+    gap: 5px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo img{
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+    object-fit: cover;
+    box-shadow: 0 0px 4px var(--shadow_color);
+    z-index: 1;
+}
+
+.photo img:hover{
+    transform: scale(1.05);
+    transition: transform var(--transition_delay) ease-out;
+}
+
+
+
+/* Css for show more button */
+
+.show_more_images {
+    display: none;
+    margin: 0px;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0px;
+    background-color: var(--background_color);
+    color: var(--heading_color);
+    cursor: pointer;
+    border: 0px;
+
+}
+
+.show_more_images:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* Media query */
+
+@media(max-width:1250px){
+
+    .fixed_image2{
+        display: none;
+    }
+
+    .alt_fxd_img{
+        display: block;
+    }
+
+}
+
+@media(max-width:1150px){
+
+    .abc_intro{
+        margin: 30px 50px;
+    }
+        
+    .description{
+        flex-direction: column;
+        margin: 30px 50px;
+    }
+
+    .content{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .img_container {
+        width: 50%;
+    }
+
+    #para2{
+        flex-direction: column-reverse;
+    }
+}
+
+@media(max-width:750px){
+
+    .fixed_image1,
+    .fixed_image2{
+        margin: 0px;
+    }
+    .img_container{
+        width: 70%;
+    }
+
+    .gallery_container{
+        width: 60%;
+    }
+
+    .photo_gallery{
+        flex-direction: column;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .show_more_images {
+        font-size: 0.9em;
+        display: block;
+    }
+
+}
+
+@media(max-width:550px){
+
+    .abc_intro{
+        margin: 30px 20px;
+    }
+
+    .description{
+        margin: 30px 20px;
+    }
+
+    .show_more_images {
+        font-size: 0.8rem;
+    }
+
+}
+
+
+
+
+
+
+
