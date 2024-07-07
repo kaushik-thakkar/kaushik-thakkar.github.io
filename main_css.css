@@ -144,7 +144,6 @@ body.dark{
 
 .quote {
     display: flex;
-    font-size: 1.15em;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -164,7 +163,7 @@ body.dark{
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
 
@@ -405,7 +404,7 @@ body.dark{
     }
 
     .about{
-        margin: 40px 10px;
+        margin: 40px 15px;
     }
 }
 
@@ -518,6 +517,7 @@ body.dark{
 }
 
 @media(max-width:650px){
+
     .details{
         padding: 0px 10px;
     }
@@ -528,12 +528,12 @@ body.dark{
 
     .education_item{
         max-width: 100%;
-        margin: 10px;
+        margin: 15px;
         margin-bottom: 25px;
     }
 
     .page_heading{
-        margin: 20px 10px;
+        margin: 20px 15px;
     }
 
     .adjusted_logo img{
@@ -650,13 +650,13 @@ body.dark{
 @media(max-width:550px){
 
     .individual_project{
-        margin: 10px;
+        margin: 15px;
         width: 100%;
         margin-bottom: 25px;
     }
 
     .page_heading{
-        margin: 10px;
+        margin: 15px;
     }
 
     .individual_project h3{
@@ -681,13 +681,12 @@ body.dark{
     display: flex;
     flex-wrap: wrap;
     margin: 20px 90px;
+    gap: 20px;
 }
 
 .blog_item {
     display: flex;
     width: 300px;
-    margin-right: 20px;
-    margin-bottom: 20px;
     flex-direction: column;
     border: 1px solid transparent; 
     box-shadow: 0 0px 4px var(--shadow_color);
@@ -741,14 +740,15 @@ body.dark{
 /* Median query for blog page */
 
 
-@media(max-width:950px){
+@media(max-width:1150px){
 
     .blog_items{
         margin: 20px 30px;
+        gap: 10px;
     }
 
     .blog_item{
-        width: 200px;
+        width: 235px;
     }
 }
 
@@ -758,7 +758,17 @@ body.dark{
         width: 100%;
     }
     .blog_items{
-        margin: 20px 10px;
+        margin: 20px 15px;
+        gap: 5px;
+    }
+    .blog_item{
+        width: 150px;
+    }
+    .blog_desc h2{
+        font-size: 0.9em;
+    }
+    .blog_desc p{
+        font-size: 0.7em;
     }
 }
 
