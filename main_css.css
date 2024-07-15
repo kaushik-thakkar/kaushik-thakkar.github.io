@@ -149,6 +149,7 @@ body.dark{
     flex-direction: column;
     font-family: "Dancing Script", cursive;
     margin: 20px;
+    font-size: 1.2em;
 }
 
 .author {
@@ -163,7 +164,7 @@ body.dark{
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 0.6em;
+    font-size: 0.8em;
 }
 
 
@@ -209,9 +210,19 @@ body.dark{
         opacity: 0;
     }
 
+    .author{
+        font-size: 0.7em;
+    }
+    .copyright{
+        font-size: 0.7em;
+    }
+    .quote{
+        font-size: 1em;
+    }
+
 }
 
-@media(max-width: 450px){
+@media(max-width: 550px){
 
     .nav_list{
         gap: 10px;
@@ -395,7 +406,6 @@ body.dark{
     }
 
 }
-
 
 @media(max-width:550px){
 
