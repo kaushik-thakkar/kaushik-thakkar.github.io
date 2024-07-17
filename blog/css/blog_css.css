@@ -62,11 +62,13 @@ body{
 body.dark{
     --background_color: #121212;
     --text_color: #FFFFFF;
-    --heading_color:#1E90FF;
-    --header_footer_bc: #333333;
-    --hr_color: white;
-    --shadow_color: rgba(136, 136, 136, 0.196);
-    --border_col: white;
+
+
+    /* --heading_color:#1E90FF; */
+    --heading_color: #2d81ffed;
+    --header_footer_bc: #0c0c0c;
+    --hr_color: rgb(255, 255, 255);
+    --shadow_color: #cecac9;
 }
 
 /* Css for header part */
